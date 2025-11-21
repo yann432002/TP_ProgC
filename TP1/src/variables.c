@@ -3,24 +3,31 @@
 int main() {
     printf("Tailles des types de base en C (en variables) :\n\n");
 
-    printf("char (signed)        : %zu %s\n", size_signed_char, unite);
-    printf("char (unsigned)      : %zu %s\n", size_unsigned_char, unite);
+    // Types caractères
+    printf("char (signed)        : %zu variable(s)\n", unite(signed char));
+    printf("char (unsigned)      : %zu variable(s)\n", unite(unsigned char));
 
-    printf("short (signed)       : %zu %s\n", size_signed_short, unite);
-    printf("short (unsigned)     : %zu %s\n", size_unsigned_short, unite);
+    // Types entiers courts
+    printf("short (signed)       : %zu variable(s)\n", unite(signed short));
+    printf("short (unsigned)     : %zu variable(s)\n", unite(unsigned short));
 
-    printf("int (signed)         : %zu %s\n", size_signed_int, unite);
-    printf("int (unsigned)       : %zu %s\n", size_unsigned_int, unite);
+    // Types entiers
+    printf("int (signed)         : %zu variable(s)\n", unite(signed int));
+    printf("int (unsigned)       : %zu variable(s)\n", unite(unsigned int));
 
-    printf("long int (signed)    : %zu %s\n", size_signed_long, unite);
-    printf("long int (unsigned)  : %zu %s\n", size_unsigned_long, unite);
+    // Types long
+    printf("long int (signed)    : %zu variable(s)\n", unite(signed long int));
+    printf("long int (unsigned)  : %zu variable(s)\n", unite(unsigned long int));
 
-    printf("long long (signed)   : %zu %s\n", size_signed_long_long, unite);
-    printf("long long (unsigned) : %zu %s\n", size_unsigned_long_long, unite);
+    // Types long long
+    printf("long long (signed)   : %zu variable(s)\n", unite(signed long long int));
+    printf("long long (unsigned) : %zu variable(s)\n", unite(unsigned long long int));
 
-    printf("float                : %zu %s\n", size_float, unite);
-    printf("double               : %zu %s\n", size_double, unite);
-    printf("long double          : %zu %s\n", size_long_double, unite);
+    // Types à virgule flottante
+    printf("float                : %zu variable(s)\n", unite(float));
+    printf("double               : %zu variable(s)\n", unite(double));
+    printf("long double          : %zu variable(s)\n", unite(long double));
 
     return 0;
 }
+
