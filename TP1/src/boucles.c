@@ -9,17 +9,22 @@ int main() {
         scanf("%d", &compteur);
     } while (compteur >= 10 || compteur <= 0);
 
-    printf("\nTriangle rectangle avec for :\n\n");
+    printf("\nTriangle rectangle avec while :\n\n");
 
-    for (int i = 1; i <= compteur; i++) {          // Boucle pour les lignes
-        for (int j = 1; j <= i; j++) {             // Boucle pour les colonnes
-            if (i % 2 == 0 && j % 2 == 0)          // Remplace certains '*' par '#'
+    int i = 1;  // ligne
+    while (i <= compteur) {
+        int j = 1;  // colonne
+        while (j <= i) {
+            if (i % 2 == 0 && j % 2 == 0)  // symboles conditionnels
                 printf("# ");
             else
                 printf("* ");
+            j++;
         }
         printf("\n");
+        i++;
     }
 
     return 0;
 }
+
